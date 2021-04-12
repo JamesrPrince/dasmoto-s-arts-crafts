@@ -1,0 +1,126 @@
+html {
+  box-sizing: border-box;
+  font-size: 100%;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #f8fafc;
+  font-size: 1rem;
+  margin: 0;
+  padding: 0;
+  color: beige;
+}
+
+/* Structure of the page */
+
+.container {
+  max-width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.fs62 {
+  font-size: 3.875rem;
+}
+
+.fs32 {
+  font-size: 2rem;
+}
+
+.fs28 {
+  font-size: 1.5rem;
+}
+
+.mb1 {
+  margin-bottom: 1rem;
+}
+
+.mb2 {
+  margin-bottom: 2rem;
+}
+
+.mb3 {
+  margin-bottom: 3rem;
+}
+
+.bgc-green {
+  background-color: green;
+}
+
+.bgc-red {
+  background-color: red;
+}
+
+.bgc-blue {
+  background-color: blue;
+}
+
+/* home head area */
+.head {
+  width: 100%;
+  color: khaki;
+  text-align: center;
+  background-image: url("/rescources/images/pattern.jpeg");
+  border-radius: 6px;
+  box-shadow: 0px 5px 10px #022033;
+}
+
+img {
+    border-radius: 10px;
+    box-shadow: 0 4px 10px #00000033;
+}
+
+h3 {
+  color: black;
+  margin: 0;
+}
+p {
+  color: rgb(82, 79, 79);
+  margin: 0.5em;
+  font-size: 1rem;
+}
+
+.section {
+  width: 100%;
+  text-align: center;
+}
+
+.section,
+.description {
+  flex: 30%;
+}
+
+.section h2 {
+    width: 80%;
+    margin: 1rem auto;
+  box-shadow: 0px 5px 10px #022033;
+
+}
+
+/* prices */
+.price-color {
+  color: blue;
+  font-weight: 600;
+}
+
+@media (max-width: 500px) {
+  .fs62 {
+    font-size: 2.875rem;
+  }
+
+  .fs28 {
+      font-size: 1.115rem;
+  }
+}
+
+@media (max-width: 640px) {
+    .container, .head {
+        max-width: 100%;
+}
