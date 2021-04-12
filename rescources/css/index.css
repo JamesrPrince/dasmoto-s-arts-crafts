@@ -68,8 +68,9 @@ body {
   color: khaki;
   text-align: center;
   background-image: url("/rescources/images/pattern.jpeg");
-  border-radius: 6px;
-  box-shadow: 0px 5px 10px #022033;
+  border-radius: 0 0 6px 6px;
+  box-shadow: 0px 1px 4px #022033;
+  padding: 1em;
 }
 
 img {
@@ -90,6 +91,7 @@ p {
 .section {
   width: 100%;
   text-align: center;
+  margin: 0 1em;
 }
 
 .section,
@@ -100,7 +102,7 @@ p {
 .section h2 {
     width: 80%;
     margin: 1rem auto;
-  box-shadow: 0px 5px 10px #022033;
+  box-shadow: 0px 2px 2px #022033;
 
 }
 
@@ -115,9 +117,14 @@ p {
     font-size: 2.875rem;
   }
 
+  .fs32 {
+      font-size: 1.5rem;
+  }
+
   .fs28 {
       font-size: 1.115rem;
   }
+  
 }
 
 @media (max-width: 640px) {
