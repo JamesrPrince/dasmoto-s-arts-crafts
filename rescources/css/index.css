@@ -1,3 +1,20 @@
+:root {
+  --clr-primary: #ee6352;
+  --clr-secondary: #d16e8d;
+  --clr-accent: #f7f7ff;
+  --clr-gradient: linear-gradient(
+    -90deg,
+    var(--clr-primary),
+    var(--clr-secondary)
+  );
+  --ff-title: bungee, sans-serif;
+  --ff-body: canada-type-gibson, sans-serif;
+  --fw-body: 300;
+  --fw-bold: 800;
+  --fw-title: 400;
+  --fw-number: 800;
+}
+
 html {
   box-sizing: border-box;
   font-size: 100%;
@@ -28,6 +45,7 @@ body {
 
 .fs62 {
   font-size: 3.875rem;
+  background: var(--clr-gradient);
 }
 
 .fs32 {
@@ -65,17 +83,21 @@ body {
 /* home head area */
 .head {
   width: 100%;
-  color: khaki;
   text-align: center;
-  background-image: url("/rescources/images/pattern.jpeg");
+  background: var(-clr-gradient);
+  text-transform: uppercase;
+  margin: 60px auto;
+  /* background-image: url("/rescources/images/pattern.jpeg"); */
+  color: rgb(235, 234, 227);
   border-radius: 0 0 6px 6px;
   box-shadow: 0px 1px 4px #022033;
   padding: 1em;
+  clip-path: polygon(0 0, 100% 0%, 100% 60%, 0% 100%);
 }
 
 img {
-    border-radius: 10px;
-    box-shadow: 0 4px 10px #00000033;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px #00000033;
 }
 
 h3 {
@@ -100,10 +122,9 @@ p {
 }
 
 .section h2 {
-    width: 80%;
-    margin: 1rem auto;
+  width: 80%;
+  margin: 1rem auto;
   box-shadow: 0px 2px 2px #022033;
-
 }
 
 /* prices */
@@ -118,17 +139,17 @@ p {
   }
 
   .fs32 {
-      font-size: 1.5rem;
+    font-size: 1.5rem;
   }
 
   .fs28 {
-      font-size: 1.115rem;
+    font-size: 1.115rem;
   }
-  
 }
 
 @media (max-width: 640px) {
-    .container, .head {
-        max-width: 100%;
-}
+  .container,
+  .head {
+    max-width: 100%;
+  }
 }
